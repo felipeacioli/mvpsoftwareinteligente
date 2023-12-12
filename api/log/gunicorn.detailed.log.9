@@ -1,0 +1,102 @@
+[2023-12-11 21:09:15,228] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.126:5000 - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:15,230] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:15,232] INFO _log() L96    * Restarting with stat - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:25,705] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:25] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:25,791] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:25] "GET /openapi/ HTTP/1.1" 200 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:26,145] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:26] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:26,186] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:26] "[36mGET /openapi/static/images/redoc.svg HTTP/1.1[0m" 304 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:26,247] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:26] "[36mGET /openapi/static/images/rapidoc.svg HTTP/1.1[0m" 304 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:27,179] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:27] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:27,203] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:27] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:27,205] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:27] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:27,209] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:27] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:27,510] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:27] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:09:36,660] ERROR log_exception() L825  Exception on /amostra [POST] - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\app.py", line 63, in predict
+    modelo = Model.carrega_modelo(ml_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\model\modelo.py", line 16, in carrega_modelo
+    raise Exception('Formato de arquivo não suportado')
+Exception: Formato de arquivo não suportado
+[2023-12-11 21:09:36,667] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:09:36] "[35m[1mPOST /amostra HTTP/1.1[0m" 500 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:18:14,953] ERROR log_exception() L825  Exception on /amostra [POST] - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\app.py", line 63, in predict
+    modelo = Model.carrega_modelo(ml_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\model\modelo.py", line 16, in carrega_modelo
+    raise Exception('Formato de arquivo não suportado')
+Exception: Formato de arquivo não suportado
+[2023-12-11 21:18:14,957] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:18:14] "[35m[1mPOST /amostra HTTP/1.1[0m" 500 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:22:05,420] INFO _log() L96    * Detected change in 'Z:\\ENEM\\exemplo_mvp\\api\\model\\__init__.py', reloading - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:22:05,628] INFO _log() L96    * Restarting with stat - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:22:10,231] ERROR log_exception() L825  Exception on /amostra [POST] - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py L825 
+Traceback (most recent call last):
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\app.py", line 63, in predict
+    modelo = Model.carrega_modelo(ml_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\ENEM\exemplo_mvp\api\model\modelo.py", line 16, in carrega_modelo
+    raise Exception('Formato de arquivo não suportado')
+Exception: Formato de arquivo não suportado
+[2023-12-11 21:22:10,238] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:22:10] "[35m[1mPOST /amostra HTTP/1.1[0m" 500 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:26:22,555] INFO _log() L96    * Detected change in 'Z:\\ENEM\\exemplo_mvp\\api\\model\\amostra.py', reloading - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:26:22,719] INFO _log() L96    * Restarting with stat - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
+[2023-12-11 21:26:34,608] INFO _log() L96   127.0.0.1 - - [11/Dec/2023 21:26:34] "[35m[1mPOST /amostra HTTP/1.1[0m" 500 - - call_trace=Z:\ENEM\exemplo_mvp\api\env\Lib\site-packages\werkzeug\_internal.py L96  
