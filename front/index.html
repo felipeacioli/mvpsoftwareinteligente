@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AI Análise de Água</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+<body>
+    <!-- Cabeçalho do sistema -->
+    <header>
+        <div class="header-container">
+            <h1>AI Análise de Água</h1>
+            <p>Sistema inteligente para análise da qualidade da água.</p>
+        </div>
+    </header>
+
+    <!-- Seção principal -->
+    <main>
+        <!-- Formulário de entrada de dados -->
+        <section class="data-input">
+            <h2>Insira os dados da amostra</h2>
+            <form id="waterAnalysisForm">
+                <label for="newPh">Ph:</label>
+                <input type="text" id="newPh" placeholder="Ph">
+                
+                <label for="newHardness">Hardness:</label>
+                <input type="text" id="newHardness" placeholder="Hardness">
+                
+                <label for="newSolids">Solids:</label>
+                <input type="text" id="newSolids" placeholder="Solids">
+                
+                <label for="newChloramines">Chloramines:</label>
+                <input type="text" id="newChloramines" placeholder="Chloramines">
+                
+                <label for="newSulfate">Sulfate:</label>
+                <input type="text" id="newSulfate" placeholder="Sulfate">
+                
+                <label for="newConductivity">Conductivity:</label>
+                <input type="text" id="newConductivity" placeholder="Conductivity">
+                
+                <label for="newOrganic_carbon">Organic Carbon:</label>
+                <input type="text" id="newOrganic_carbon" placeholder="Organic Carbon">
+                
+                <label for="newTrihalomethanes">Trihalomethanes:</label>
+                <input type="text" id="newTrihalomethanes" placeholder="Trihalomethanes">
+                
+                <label for="newTurbidity">Turbidity:</label>
+                <input type="text" id="newTurbidity" placeholder="Turbidity">
+                
+                <button type="button" onclick="newItem()" class="analyze-btn">Analisar</button>
+            </form>
+        </section>
+
+        <!-- Tabela de análise -->
+        <section class="data-table">
+            <h2>Resultados da Análise</h2>
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Ph</th>
+                        <th>Hardness</th>
+                        <th>Solids</th>
+                        <th>Chloramines</th>
+                        <th>Sulfate</th>
+                        <th>Conductivity</th>
+                        <th>Organic Carbon</th>
+                        <th>Trihalomethanes</th>
+                        <th>Turbidity</th>
+                        <th>Potability</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados da tabela serão preenchidos dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Script de funcionamento -->
+    <script src="scripts.js"></script>
+</body>
+</html>
