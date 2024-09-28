@@ -1,4 +1,4 @@
-##API - MVP Software Inteligente
+API - MVP Software Inteligente
 
 Como executar
 Será necessário ter todas as libs python listadas no requirements.txt instaladas. Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
