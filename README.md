@@ -1,10 +1,10 @@
-#AI Análise de Água
+# AI Análise de Água
 
 MVP - Engenharia de Sistemas de Software Inteligentes - Modelo para predição da potabilidade da água com base nos seguintes parâmetros: ph, dureza, sólidos, cloraminas, sulfato, condutividade, carbono orgânico, trihalometanos e turbidez.
 
 
 
-## About Dataset
+# About Dataset
 Context
 Access to safe drinking-water is essential to health, a basic human right and a component of effective policy for health protection. This is important as a health and development issue at a national, regional and local level. In some regions, it has been shown that investments in water supply and sanitation can yield a net economic benefit, since the reductions in adverse health effects and health care costs outweigh the costs of undertaking the interventions.
 
