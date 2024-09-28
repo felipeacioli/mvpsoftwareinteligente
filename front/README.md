@@ -1,8 +1,10 @@
-# Meu Front
+# AI Análise de Água
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
+Front-End do projeto MVP da Disciplina de Software Inteligente PUC-RIO. 
 
-O objetivo aqui é ilutsrar o conteúdo apresentado na terceira aula.
+Single page application (SPA) que tem por objetivo fazer análises da qualidade para predição da potabilidade da água com base nos seguintes parâmetros: ph, dureza, sólidos, cloraminas, sulfato, condutividade, carbono orgânico, trihalometanos e turbidez.
+
+Esta aplicação indica se a água é segura para consumo humano, onde 1 significa potável e 0 significa não potável.
 
 ---
 ## Como executar
